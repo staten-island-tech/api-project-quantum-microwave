@@ -1,7 +1,7 @@
 {
   "name": "intro-to-webpack-modules",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "build:tailwind": "tailwind build dist/css/main.css -o dist/css/output.css",
     "start": "webpack-dev-server --mode development --open",
