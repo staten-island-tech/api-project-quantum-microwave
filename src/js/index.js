@@ -29,3 +29,4 @@ getData();
 //user inputs wrong thing, display error
 //clear field once thing is displayed
 //display more images
+//press enter and it displays
