@@ -36,7 +36,7 @@
           <h5 class="header col s12 light">Security Clearance Granted</h5>
         </div>
         <div class="row center scrollspy">
-          <a href="#targetname" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="#targetname" id="download-button" onmousedown="jarvis.play()" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
         </div>
         <br><br>
 
@@ -72,9 +72,9 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Friday's Assistance</h5>
+            <h5 class="center">Jarvis's Assistance</h5>
 
-            <p class="light">Friday, Tony Stark's renown artificial intelligence system, has been deployed to secure this database and maintain its assets at all costs.</p>
+            <p class="light">Jarvis, Tony Stark's renown artificial intelligence system, has been deployed to secure this database and maintain its assets at all costs.</p>
           </div>
         </div>
       </div>
@@ -105,19 +105,23 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Information</h4>
 
-          <div class="wrap target scrollspy"> <a name="targetname" class="scrollspy"></a> 
+        <form id="avenger-form">
+          <div id="targetname" class="wrap target section scrollspy"> 
             <div class="search scrollspy">
-               <input class="avenger-search" type="text" class="searchTerm" placeholder="What are you looking for?">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?">
                <button type="submit" class="searchButton">
                 <i class="fa fa-angle-double-down"></i>
               </button>
             </div>
          </div>
+        </form>
 
-          <p class="left-align light display-description"> </p>
+          <p class="left-align light marvel-name"> </p>
+          <p class="left-align light mrvl-descrip"> </p>
+
           
           <div class="display-image-banner">
-            <img src="" alt=" " class="col s12 m6 l3 display-image-1">
+            <img src="" alt=" " class="col s12 m6 l3 display-thumbnail">
             <img src="" alt=" " class="col s12 m6 l3 display-image-2">
             <img src="" alt=" " class="col s12 m6 l3 display-image-3">
             <img src="" alt=" " class="col s12 m6 l3 display-image-4">
@@ -178,6 +182,10 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    const jarvis = new Audio();
+    jarvis.src = "jarvis.mp3";
+  </script>
 
   </body>
 </html>
