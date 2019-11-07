@@ -1,5 +1,5 @@
 const DOMStrings = {
-  input: document.getElementById("pkmn-form"),
+  input: document.getElementById("marvel-form"),
   name: document.getElementById("marvel-name"),
   displayName: document.querySelector(".mrvl-name-size"),
   displayImage: document.querySelector(".display-thumbnail"),
@@ -14,7 +14,7 @@ DOMStrings.input.addEventListener("keypress", function(event) {
   }
 });
 
-function getPkmn() {
+function getMarvel() {
   DOMStrings.input.addEventListener("submit", async function(e) {
     e.preventDefault();
     try {
@@ -26,18 +26,18 @@ function getPkmn() {
          
 
 
-      const displayPkmn = function(data) {
+      const displayMarvel = function(data) {
         DOMStrings.displayName.innerText = data.data.results[0].name;
         DOMStrings.displayDescrip.innerText = data.data.results[0].description;
         DOMStrings.displayImage.src = data.data.results[0].thumbnail.path +'/detail' + "." + data.data.results[0].thumbnail.extension;
         DOMStrings.type.textContent = data.data.types.map(data => data.data.type.name);
       };
 
-      displayPkmn(data);
+      displayMarvel(data);
     } catch (err) {
       console.log(err);
     }
   });
 }
 
-getPkmn();
+getMarvel();
