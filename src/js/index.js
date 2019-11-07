@@ -3,7 +3,7 @@ const AvengerStrings = {
     input: document.getElementById('avenger-form'), //comma because its an object
     inputName: document.getElementById('search-term'),
     displayName: document.querySelector('.marvel-name'),
-    displayDescrip: document.querySelector('.mrvl-descrip'),
+    displayDescription: document.querySelector('.marvel-description'),
     displayThumbnail: document.querySelector('.display-thumbnail')
 }
 
@@ -17,10 +17,15 @@ function getData(){
             console.log(data.data)
 
             const displayThing = function(data){
-                AvengerStrings.displayName.innerText = data.data.results[0].description;
+                AvengerStrings.displayName.innerText = data.data.results[0].name;
+                AvengerStrings.displayDescription.innerText = data.data.results[0].description;
                 AvengerStrings.displayThumbnail.src = data.data.results[0].thumbnail.path + '/standard_amazing.jpg';
             };
             displayThing(data);
     })
 }
 getData();
+
+//user inputs wrong thing, display error
+//clear field once thing is displayed
+//display more images
