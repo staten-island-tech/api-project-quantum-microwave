@@ -28,7 +28,8 @@ class Marvel {
 
 class UI {
   getMarvel(marvel) {
-    DOMStrings.input(async function(e) {
+    DOMStrings.input.addEventListener("submit", async function(e) {
+      e.preventDefault();
       try {
         const result = await fetch(
           `https://gateway.marvel.com:443/v1/public/characters?name=${DOMStrings.name.value}&ts=1&apikey=08bdc0969adbf9a79f5e6592b6980b85&hash=7eaf0892e7f5433321e3642146ee8928`
@@ -75,18 +76,22 @@ document.getElementById("marvel-form").addEventListener("submit", function(e) {
     alert("Error: Missing Info");
   } else {
     ui.getMarvel(marvel);
-    ui.clearFields();
   }
-  e.preventDefault();
-});
 
-document.querySelector('.display').addEventListener('click', function(e){
+  ui.clearFields();
+  
+
+  e.preventDefault();
+}
+    )
+
+/* document.querySelector('.display').addEventListener('click', function(e){
     const ui = new UI();
 
     ui.clearFields();
 
     e.preventDefault();
-})
+}) */
 
 //***View */ class for the UI which contains methods(user interface)
 /* class UI{
