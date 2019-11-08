@@ -65,12 +65,6 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
-}
-
 .searchTerm {
   width: 100%;
   border: 3px solid #00B4CC;
@@ -103,9 +97,8 @@ body{
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  top: 50%;
-  left: 50%;
-  margin: 0 auto;
+.search {
+  display: flex;
+  align-content: center;
+
 }
