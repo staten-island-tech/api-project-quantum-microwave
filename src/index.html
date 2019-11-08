@@ -100,7 +100,7 @@
   <div class="container">
     <div class="section">
 
-      <div id="targetname" class="row">
+      <div id="targetname" class="row scrollspy">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Information</h4>
@@ -108,10 +108,10 @@
         <form id="avenger-form">
           <div class="wrap target section scrollspy"> 
             <div class="search">
-               <input type="textarea" class="searchTerm" placeholder="What are you looking for?">
-               <button type="submit" class="searchButton">
+               <textarea type="textarea" id="search-term" placeholder="What are you looking for?"></textarea>  
+               <input type="submit" id="Submit">
                 <i class="fa fa-angle-double-down"></i>
-              </button>
+              </input>
             </div>
          </div>
         </form>
@@ -182,6 +182,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/index.js"></script>
   <script>
     const jarvis = new Audio();
     jarvis.src = "jarvis.mp3";
