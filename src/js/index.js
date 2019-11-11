@@ -21,7 +21,7 @@ function getData(){
                 `https://gateway.marvel.com:443/v1/public/characters?name=${AvengerStrings.inputName.value}&ts=1&apikey=08bdc0969adbf9a79f5e6592b6980b85&hash=7eaf0892e7f5433321e3642146ee8928`
                 );
                 const data = await result.json();
-                console.log(data.data)
+                //console.log(data.data)
     
                 const displayThing = function(data){
                     AvengerStrings.displayName.innerText = data.data.results[0].name;
