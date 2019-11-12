@@ -1,5 +1,4 @@
 
-
 export const AvengerStrings = {
     input: document.getElementById('avenger-form'), //comma because its an object
     inputName: document.getElementById('search-term'),
