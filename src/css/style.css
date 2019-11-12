@@ -65,18 +65,18 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.searchTerm {
+#search-term {
   width: 100%;
   border: 3px solid #00B4CC;
   border-right: none;
   padding: 5px;
-  height: 20px;
+  height: 36px;
   border-radius: 5px 0 0 5px;
   outline: none;
   color: #9DBFAF;
 }
 
-.searchTerm:focus{
+#search-term:focus{
   color: #00B4CC;
 }
 
@@ -84,8 +84,8 @@ body{
     content: "\f002";
 }
 
-.searchButton {
-  width: 40px;
+.nes-btn {
+  width: 80px;
   height: 36px;
   border: 1px solid #00B4CC;
   background: #00B4CC;
@@ -100,5 +100,7 @@ body{
 .search {
   display: flex;
   align-content: center;
+  width: 50%;
+  margin: auto;
 
 }
