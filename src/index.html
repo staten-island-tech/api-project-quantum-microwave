@@ -107,7 +107,7 @@
           <div class="wrap target section scrollspy"> 
             <div class="search">
                <textarea type="textarea" id="search-term" placeholder="What are you looking for?"></textarea>  
-               <input type="submit" id="Submit" class="nes-btn">
+               <input type="submit" id="Submit" class="nes-btn" onmousedown="buttonsound.play()">
                 <i class="fa fa-angle-double-down"></i>
               </input>
             </div>
@@ -185,6 +185,11 @@
     const jarvis = new Audio();
     jarvis.src = "jarvis.mp3";
   </script>
-
+  <script>
+    const buttonsound = new Audio();
+    buttonsound.src = "buttonsound.mp3";
+  </script>
+  <script type="module" src="index.js"></script> 
+  
   </body>
 </html>
