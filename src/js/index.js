@@ -1,4 +1,4 @@
-import {AvengerStrings} from './avengerstrings.js'
+import {AvengerStrings} from './avengerstrings.js';
 
 AvengerStrings.input.addEventListener("keypress", function(e){
     if (event.keyCode === 13){
@@ -41,6 +41,9 @@ function getData(){
                 AvengerStrings.displayName.innerText = 'Error: Marvel Character Does Not Exist!';
                 AvengerStrings.displayDescription.innerText = '';
                 AvengerStrings.displayThumbnail.src = '';
+                AvengerStrings.displayImageOne.src = '';
+                AvengerStrings.displayImageTwo.src = '';
+                AvengerStrings.displayImageThree.src = '';
             };
             invalid();
             AvengerStrings.inputName.value = '';
